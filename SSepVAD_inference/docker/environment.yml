@@ -1,0 +1,14 @@
+name: SSepVAD_inference_env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - portaudio=19.6.* # Diart + might need extra `conda install -c conda-forge portaudio`
+  - pysoundfile=0.12.* # Diart
+  - ffmpeg[version='<4.4'] # Diart
+  - pip
+  - pip:
+    - -e ../../../ # Install speaker-diarization package 
+    - -r ../../../externals/diart_0.8.0_2118110/requirements.txt
+    - -e ../../../externals/diart_0.8.0_2118110

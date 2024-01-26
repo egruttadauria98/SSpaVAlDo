@@ -1,0 +1,12 @@
+name: source-separation_005
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.8
+  - Cython
+  - pip:
+    - -r ../../../externals/asteroid_0.6.1dev0_fd6a963/requirements/torchhub.txt
+    - -r ../../../externals/asteroid_0.6.1dev0_fd6a963/requirements/install.txt
+    - -e ../../../externals/asteroid_0.6.1dev0_fd6a963
+    - librosa==0.9.2

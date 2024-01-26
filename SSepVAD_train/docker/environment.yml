@@ -1,0 +1,16 @@
+name: SSepVAD_train_env
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.8.5 # Pyannote/Diart
+  - libsndfile==1.0.28 # Pyannote
+  - pip>=20.2 # Pyannote
+  - portaudio=19.6.* # Diart + might need extra `conda install -c conda-forge portaudio`
+  - pysoundfile=0.12.* # Diart
+  - ffmpeg[version='<4.4'] # Diart
+  - pip:
+    - -e ../../../ # Install speaker-diarization package 
+    - -e ../../../externals/pyannote-audio_3.0.1_28fcf50 
+
