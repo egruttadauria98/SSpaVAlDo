@@ -1,6 +1,6 @@
 # Introduction
 
-This repository constains the code to reproduce the results of the paper ["ONLINE SPEAKER DIARIZATION OF MEETINGS GUIDED BY SPEECH SEPARATION"](https://hal.science/hal-04419041), accepted to ICASSP 2024.\
+This repository constains the code to reproduce the results of the paper ["ONLINE SPEAKER DIARIZATION OF MEETINGS GUIDED BY SPEECH SEPARATION"](https://arxiv.org/abs/2402.00067), accepted to ICASSP 2024.\
 The code is divided into three main experiments:
 1. `SSep_AMI_finetuning`: finetuning a pretrained SSep model on real data from AMI (individual headset)
 > Speech separation models are normally trained on fully overlapped mixtures, often because it is not straightforward to train such models in a supervised way with real data.
@@ -43,4 +43,4 @@ The AMI datasets needs to be set up as in the `SSep finetuning` section, followi
   - For SSep models finetuned on AMI and SSepVAD, stay tuned!...
 
 ## Citation
-["ONLINE SPEAKER DIARIZATION OF MEETINGS GUIDED BY SPEECH SEPARATION"](https://hal.science/hal-04419041)
+["ONLINE SPEAKER DIARIZATION OF MEETINGS GUIDED BY SPEECH SEPARATION"](https://arxiv.org/abs/2402.00067)
